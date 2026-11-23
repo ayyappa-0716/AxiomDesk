@@ -9,7 +9,7 @@ from io import BytesIO
 from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT / "data"
+DATA = Path(os.environ.get("AXIOMDESK_DATA_DIR", ROOT / "data"))
 UPLOADS = DATA / "uploads"
 DATA.mkdir(exist_ok=True)
 UPLOADS.mkdir(exist_ok=True)
