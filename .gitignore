@@ -1,0 +1,9 @@
+data/
+__pycache__/
+*.pyc
+app_backup_*.py
+server-log.txt
+server-error.txt
+.env
+.venv/
+venv/
